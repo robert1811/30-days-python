@@ -1,0 +1,13 @@
+{% extends 'layouts/base.html' %}
+
+{% block content %}
+<h1>Projects</h1>
+<a href="/create_project">Create project</a>
+{% for project in projects %}
+<article>
+    <h2>{{project.name}}</h2>
+    <button>Delete</button>
+    <button>Update</button>
+</article>
+{% endfor %}
+{% endblock %}
