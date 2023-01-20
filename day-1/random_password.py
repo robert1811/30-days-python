@@ -3,6 +3,7 @@ import random
 def random_password():
     letters = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'
 
+    password_length = None
     password_length = input('type the size of the password: ')
 
     array = []
